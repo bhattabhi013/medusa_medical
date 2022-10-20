@@ -1,22 +1,25 @@
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect} from 'react';
+
 
 export default function Product() {
-    const [data,setData]=useState([]);
-    const [filter,setFilter]=useState(data);
+    const [data,setData]=useState([ ]);
+    const [filters,setFilters]=useState(data);
     const [loading,setLoading]=useState(false);
+
+    
 
     let componentMounted = true;
 
     useEffect(()=>{
-        const getProducts = async () => {
+        const getProduct = async () => {
             setLoading(true);
             const response=await fetch("http://localhost:9000/store/products");
-            console.log("response-------->",response);
+            // console.log("response-------->",response);
             if(componentMounted){
                 setData(await response.clone().json());
-                setFilter(await response.json());
+                setFilters(await response.json());
                 setLoading(false);
-                console.log("filter")
+                console.log(filters);
             }
 
 return ()=>{
@@ -24,8 +27,8 @@ return ()=>{
 }
         }
     
-    getProducts();
-    },[]);
+    getProduct();
+    }, []);
 
 
     const Loading = () =>{
@@ -47,16 +50,16 @@ return ()=>{
             <div className="btn btn-outline-dark">Jwellery</div>
             <div className="btn btn-outline-dark">Electronics</div>
         </div>
-        {filter.map((products)=>{
+       {[filters].map((product)=>{
             return (
                 <>
 <div className="col-md-3">
-<div className="card h-100 text-center p-4 "  key={products.profile_id} style="width: 18rem;">
-  <img src={products.images} class="card-img-top" alt={products.title}/>
+<div className="card h-100 text-center p-4 "  key={product.id} >
+  <img src={product.thumbnail} class="card-img-top" alt={product.title}/>
   <div className="card-body">
-    <h5 className="card-title">{products.title}</h5>
-    <p className="card-text">${products.weight}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 className="card-title">{product.title}</h5>
+    <p className="card-text">${product.weight}</p>
+    <a href="/" class="btn btn-primary">Buy Now</a>
   </div>
 </div>
 </div>
@@ -64,9 +67,9 @@ return ()=>{
             );
         })}
          </>
-        )
+        );
         
-    }
+    };
   return (
     <div>
 <div className="container">
