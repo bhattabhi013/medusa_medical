@@ -1,8 +1,9 @@
 import React,{useState, useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 
-    export default function Product(){
+ export default function Products(){
 
         // const [loading,setLoading]=useState(false);
     const [users, setUsers] = useState([]);

@@ -8,8 +8,7 @@ export default function Singleproduct() {
     const [product,setProduct]=useState([]);
 
     useEffect(()=>{
-        const getProduct=async() =>
-        {
+        const getProduct=async() =>{
             const response=await fetch(`http://localhost:9000/store/products/${id}`)
         }
         getProduct();
@@ -19,7 +18,7 @@ export default function Singleproduct() {
    
     <>
  <div>Singleproduct</div>
- <h1>{product.thumbnail}</h1>
+ <h1>{product.title}</h1>
     </>
   )
 }

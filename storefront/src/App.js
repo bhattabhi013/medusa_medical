@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
+import Products from './components/Products';
 import Home from './components/Home';
 import {Routes, Route} from 'react-router-dom'
 
@@ -10,12 +11,12 @@ function App() {
    
     
       <Navbar/>
-      <Switch>
-<Route exact path="/" element={<Home/>} />
-<Route exact path="/products" element={<Products/>} />
+      <Routes>
+<Route exact path="/Home" element={<Home/>} />
+<Route exact path="/Products" element={<Products/>} />
 
 
-      </Switch>
+      </Routes>
      
     
     </>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from './Product'
+import Products from './Products'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
    
   </div>
 </div>
-<Product/>
+<Products/>
     </div>
   )
 }
