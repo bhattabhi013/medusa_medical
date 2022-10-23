@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import { NavLink, useLocation } from 'react-router-dom';
+ import './checkout.css';
+
 
 const Checkout = () => {
   const [users, setUsers] = useState([]);
+  const location = useLocation();
   var totalCartPrice = 0;
+  const product = location.state.data;
   const getUsers =  () => {
              
     const response =  fetch('http://localhost:9000/store/products')
@@ -22,9 +29,13 @@ useEffect(() => {
 getUsers();
 }, []);
 
+const alert=()=>{
+    window.alert("congratulations , you have placed your order !!");
+}
+
   return (
     <>
-    <div>
+    {/* <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -58,10 +69,19 @@ getUsers();
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> */}
-          </div>
-        </div>
-      </nav>
-    </div>
+          {/* </div> */}
+        {/* </div> */}
+      {/* </nav> */}
+
+
+    {/* </div> */}
+
+    <div className="container">
+
+   
+    <div className="left">
+
+   
         <div className="row">
 
         <div className="col-md-7">
@@ -132,6 +152,11 @@ getUsers();
                 </div>
             </div>
         </div>
+        </div>
+
+        <div className="right">
+
+       
         
         <div className="col-md-5">
             <table className="table table-bordered">
@@ -139,30 +164,39 @@ getUsers();
                     <tr>
                         <th width="50%">Product</th>
                         <th>Price</th>
-                        <th>Qty</th>
+                        {/* <th>Qty</th> */}
                         <th>Total</th>
                     </tr>
                 </thead>
                 
                 <tbody>
-                    {users.map( (user) => {
-                     totalCartPrice += user.variants[0].prices[0].amount * 2;
-                        return (
-                            <tr key={user.id}>
-                                <td>{user.title}</td>
-                                <td>{user.variants[0].prices[0].amount}</td>
-                                <td>2</td> 
-                                <td>{user.variants[0].prices[0].amount *2}</td> 
+                   
+                            <tr>
+                                <td>{product.title}</td>
+                                <td>{product.variants[0].prices[1].amount}</td>
+                                {/* <td>2</td>  */}
+                                <td>{product.variants[0].prices[1].amount}</td> 
                             </tr>
-                        )
-                    })}
+                        
+                    
                     <tr>
                         <td colSpan="2" className="text-end fw-bold">Grand Total</td>
-                        <td colSpan="2" className="text-end fw-bold">{totalCartPrice}</td>
+                        <td colSpan="2" className="text-end fw-bold">{product.variants[0].prices[1].amount}</td>
                     </tr>
                 </tbody>
             </table>
+
+
         </div>
+        </div>
+
+        </div>
+<button onClick={alert} className="btn">
+place order
+</button>
+   <NavLink  to="/Home">go to Home</NavLink>
+ 
+    
     </>
   );
   
