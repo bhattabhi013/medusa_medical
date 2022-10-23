@@ -22,7 +22,7 @@ export default function Navbar() {
           <NavLink className="nav-link" to="/about">About</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/Checkout">Contact</NavLink>
+          <NavLink className="nav-link" to="/Contact">Contact</NavLink>
         </li>
        
        
