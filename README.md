@@ -10,11 +10,11 @@ DEMO LINK
 
 | Name            |   Github Handle       |       Discord Handle |
 |-----------------|-----------------------|----------------------|
-| Abhishek Bhatt  |    bhattabhi013       |                      |
-|                 |                       |                      |
-|                 |                       |                      |
-|                 |                       |                      |
-|                 |                       |                      |
+| Abhishek Bhatt  |   bhattabhi013        |  Abhi_bhatt#5685     |
+| Vanshita Mathur |   Vanshiii203         |  vanshita_mathur#7511|
+| Mohit Namdev    |   MohitNamdev22       |  Mohit Namdev#1188   |
+| Shravani Kaware |   ShravaniAK          |  shravani kaware#8892|
+| Shreya Sarkar   |   zugzwang03          |  Shreya Sarkar#5309  |
 
 ### Description
 
