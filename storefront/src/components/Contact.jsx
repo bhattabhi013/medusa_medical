@@ -14,7 +14,7 @@ const Contact = () => {
             <input type="text" placeholder="Enter your name" required/>
             <input type="email" placeholder="Enter your email address" required/>
             <textarea id="subject" cols="1" rows="1" placeholder="Write the subject here" required></textarea>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Write message here" required></textarea>
+            <textarea name="" id="message" cols="28" rows="8" placeholder="Write message here" required></textarea>
             <input type="submit" value="Send" class="send-btn"/>
          </form>
     </div>
@@ -26,21 +26,22 @@ const Contact = () => {
         <br/>
         <ul class="details">
             <li>
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
             </li>
             <li>
-                <i class="fa fa-link" aria-hidden="true"></i>
+                <i class="fa fa-link fa-2x" aria-hidden="true"></i>
             </li>
             <li>
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
             </li>
             <li>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
             </li>
         </ul>
         <ul class="details">
-            <li>
-                Address: 97, Park Street, Kolkata, West Bengal - 700021.
+            <li class="add">
+                Address: 97, Park Street
+                <br />Kolkata, West Bengal - 700021.
             </li>
             <li>
                 Website: abcefghd.com
