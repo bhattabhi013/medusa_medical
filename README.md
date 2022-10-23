@@ -1,8 +1,10 @@
-# MediSwiss
+# SwagNation
 
-![mediSwiss](https://user-images.githubusercontent.com/47862474/197398806-7156d524-81f6-463a-8da7-c83d6c7c9425.png)
+<img width="252" alt="image" src="https://user-images.githubusercontent.com/47862474/197412677-f7511542-e68b-4a3f-b44e-0a4b684cb2bf.png">
 
-DEMO LINK
+
+###  DEMO LINK
+- https://www.youtube.com/watch?v=bzoiAzrnp1Y
 
 ## About
 
@@ -19,17 +21,30 @@ DEMO LINK
 ### Description
 
 An open source ecommerce web application built using Medusa and React. It includes products screen,product details, cart and checkout.
-It is a medicine store which offers easy and smooth ordering and delivery of medicines across the country to patients recuperating from
-ailments. The project has some future scopes yet to be touched upon like payment portal and login, registration page. 
+It is a swag store which offers easy and smooth ordering and delivery of swags across the country to the fashion and tech enthusiasts. The project has some future scopes yet to be touched upon like payment portal and login, registration page. 
 
 ### Preview
 
+- Home 
+<img width="753" alt="image" src="https://user-images.githubusercontent.com/47862474/197413247-d88fe9ea-fb31-449b-bba0-599bcbaf2f8e.png">
+
+- Contact Us
+<img width="831" alt="image" src="https://user-images.githubusercontent.com/47862474/197411884-24089749-da49-4086-995c-dee366709218.png">
+
+- About Us
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/47862474/197413382-9f06e776-f4a9-4256-9717-66160fddc9e2.png">
+
+- Product Details
+<img width="447" alt="image" src="https://user-images.githubusercontent.com/47862474/197411924-085d25d4-b952-4b8e-bbe6-67307f0927ad.png">
+
+- Checkout 
+<img width="844" alt="image" src="https://user-images.githubusercontent.com/47862474/197413685-4781001a-d955-4aa9-b8df-035ebfb25252.png">
 
 ## Set up Project
 
 ### Prerequisites
 
-Before running the applicaiton your system must have: 
+Before running the application your system must have: 
 
 1. Node.js v16.9.0 or greater installed on your machine
 2. Medusa fully set up
