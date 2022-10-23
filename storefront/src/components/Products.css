@@ -9,3 +9,17 @@ div .card{
     width: 400px;
 }
 
+div .card-body a{
+    border: 2px solid rgb(12, 115, 0);
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: monospace;
+    letter-spacing: 3px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+div.card-text{
+    font-weight: 900;
+}
