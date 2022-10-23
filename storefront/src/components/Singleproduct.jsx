@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import { useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import {useParams} from "react-router";
 
 
@@ -29,7 +29,7 @@ export default function Singleproduct(prop) {
         <h5 className="card-title">{product.handle}</h5>
         <h3>{product.description}</h3>
         
-        
+        <NavLink to="/Checkout">Checkout</NavLink>
        
       </div>
     </div>
