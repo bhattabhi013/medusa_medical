@@ -23,8 +23,12 @@ export default function Singleproduct(prop) {
     <div className="card h-100 text-center p-4 "  key={product.id} >
       <img src={product.thumbnail} class="card-img-top" alt={product.title}/>
       <h3>{product.title}</h3>
+      <h5>${product.weight}</h5>
       <div className="card-body">
-        <h5 className="card-title">{product.title}</h5>
+        <h5 className="card-title">{product.subtitle}</h5>
+        <h5 className="card-title">{product.handle}</h5>
+        <h3>{product.description}</h3>
+        
         
        
       </div>
