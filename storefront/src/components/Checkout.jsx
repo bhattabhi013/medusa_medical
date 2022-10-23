@@ -162,26 +162,24 @@ const alert=()=>{
                     <tr>
                         <th width="50%">Product</th>
                         <th>Price</th>
-                        <th>Qty</th>
+                        {/* <th>Qty</th> */}
                         <th>Total</th>
                     </tr>
                 </thead>
                 
                 <tbody>
-                    {users.map( (user) => {
-                     totalCartPrice += user.variants[0].prices[0].amount * 2;
-                        return (
-                            <tr key={user.id}>
-                                <td>{user.title}</td>
-                                <td>{user.variants[0].prices[0].amount}</td>
-                                <td>2</td> 
-                                <td>{user.variants[0].prices[0].amount *2}</td> 
+                   
+                            <tr>
+                                <td>1</td>
+                                <td>$400</td>
+                                {/* <td>2</td>  */}
+                                <td>$400</td> 
                             </tr>
-                        )
-                    })}
+                        
+                    
                     <tr>
                         <td colSpan="2" className="text-end fw-bold">Grand Total</td>
-                        <td colSpan="2" className="text-end fw-bold">{totalCartPrice}</td>
+                        <td colSpan="2" className="text-end fw-bold">$400</td>
                     </tr>
                 </tbody>
             </table>
@@ -194,9 +192,7 @@ const alert=()=>{
 <button onClick={alert} className="btn">
 place order
 </button>
-    <Popup trigger={<NavLink  to="/Home">go to Home</NavLink>} position="right center">
-    <div>congratulations , you have placed your order !!</div>
-   </Popup>
+   <NavLink  to="/Home">go to Home</NavLink>
  
     
     </>
