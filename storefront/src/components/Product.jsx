@@ -16,7 +16,7 @@ import React,{useState, useEffect} from 'react';
                 .then((response)=>{
                     return response.json();
                 }).then((data)=>{
-                    let product =data.products[1]
+                    let product =data.products;
                     console.log(product)
 
                     setUsers(product);
@@ -39,14 +39,15 @@ import React,{useState, useEffect} from 'react';
     <div>
 <div className="container">
     <h1>List of Products</h1>
-{[users].map((users)=>{
+{users.map((user)=>{
               return(
 <div className="col-md-3">
-<div className="card h-100 text-center p-4 "  key={users.id} >
-  <img src={users.thumbnail} class="card-img-top" alt={users.title}/>
+<div className="card h-100 text-center p-4 "  key={user.id} >
+  <img src={user.thumbnail} class="card-img-top" alt={user.title}/>
   <div className="card-body">
     <h5 className="card-title">{users.title}</h5>
-    <p className="card-text">${users.weight}</p>
+    <p className="card-text">€{user.variants[0].prices[0].amount}</p>
+    <p className="card-text">${user.variants[0].prices[1].amount}</p>
     <a href="/" class="btn btn-primary">Buy Now</a>
   </div>
 </div>
