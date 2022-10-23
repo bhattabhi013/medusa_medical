@@ -1,6 +1,6 @@
 # MediSwiss
 
-![mediSwiss](https://user-images.githubusercontent.com/47862474/197398806-7156d524-81f6-463a-8da7-c83d6c7c9425.png  width=140px height=110px)
+![mediSwiss](https://user-images.githubusercontent.com/47862474/197398806-7156d524-81f6-463a-8da7-c83d6c7c9425.png)
 
 DEMO LINK
 
