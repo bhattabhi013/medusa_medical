@@ -195,9 +195,9 @@ const alert=()=>{
 
         </div>
 <button onClick={alert} className="btn">
-place order
+PLACE ORDER
 </button>
-   <NavLink  to="/Home">go to Home</NavLink>
+   <NavLink className="goHome"  to="/Home">GO TO HOME</NavLink>
  
     
     </>
