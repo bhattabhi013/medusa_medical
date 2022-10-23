@@ -5,14 +5,14 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #ffffff;
-    background-color: #040404;
+    color: black;
+    background-color: #F6F9FF;
 }
 h1{
-    color: cyan;
+    color: #101f62;
     padding-top: 20px;
     text-align: center;
-    background-color: #040404;
+    background-color: #F6F9FF;
 }
 .contact-information{
     max-width: 960px;
@@ -28,13 +28,14 @@ h1{
 }
 .form-information{
     padding: 20px;
+    background-color: #101f62;
 }
 
 .form-information h3{
     margin-bottom: 1 rem;
     font-weight: 600;
     font-size: 1.2rem;
-    color: #040404;
+    color: white;
 }
 
 .contact-form{
@@ -47,7 +48,7 @@ h1{
     border: none;
     outline: none;
     width: 100%;
-    background: #040404;
+    background: #F6F9FF;
     padding: 10px;
     font-size: 0.9rem;
     color: #ffffff;
@@ -74,8 +75,9 @@ h1{
 
 .contact-form .send-btn{
     border: none;
+    color: #101f62;
     outline: none;
-    background: rgba(0,255,255,0.7);
+    background: #F6F9FF;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -84,7 +86,7 @@ h1{
 
 .contact-form .send-btn:hover{
     transition: 0.3s all linear;
-    background: rgb(0,255,255);
+    background:#dadada;
 }
 
 .map iframe{
@@ -119,7 +121,7 @@ h1{
 .fa-envelope{
     margin-top: 5px;
     /* background-color: white; */
-    color: cyan;
+    color: #101f62;
     /* border-radius: 50%; */
 }
 .add{
