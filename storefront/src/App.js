@@ -5,13 +5,10 @@ import Products from './components/Products';
 import Home from './components/Home';
 import {Routes, Route} from 'react-router-dom'
 import Checkout from './components/Checkout';
-<<<<<<< HEAD
 import Singleproduct from './components/Singleproduct';
-=======
 import About from './components/About';
 import Contact from './components/Contact';
 
->>>>>>> b822deee9114bc2f320b08e50ae2819f0f835896
 function App() {
   return (
     <>
