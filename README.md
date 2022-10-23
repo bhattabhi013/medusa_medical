@@ -1,6 +1,6 @@
 # MediSwiss
 
-COVER IMAGE
+![mediSwiss](https://user-images.githubusercontent.com/47862474/197398806-7156d524-81f6-463a-8da7-c83d6c7c9425.png)
 
 DEMO LINK
 
@@ -29,6 +29,11 @@ ailments. The project has some future scopes yet to be touched upon like payment
 
 ### Prerequisites
 
+Before running the applicaiton your system must have: 
+
+1. Node.js v16.9.0 or greater installed on your machine
+2. Medusa fully set up
+
 ### Install Project
 
 1. Clone the repository:
@@ -43,7 +48,7 @@ git clone https://github.com/bhattabhi013/medusa_medical.git
 ```bash
 cd server
 npm install
-npm start
+npm start or medusa develop
 ```
 
 ##### For the storefront:
@@ -53,3 +58,25 @@ npm install
 npm start
 ```
 
+##### For the admin:
+```bash
+cd admin
+npm install
+npm start
+```
+
+- Resolve CORS error: 
+Change the localhost's port number in `medusa-config.js` file in server. <br/>
+Ex: `const STORE_CORS = process.env.STORE_CORS || "http://localhost:3000 "`
+
+# Resources
+
+In this section, include links to Medusa’s GitHub repository and documentation. If you think there are any specific documentation pages that can be helpful to understand your submission more, include these specific pages.
+
+For example:
+
+- [Medusa’s GitHub repository](https://github.com/medusajs/medusa)
+- [How to Create Services](https://docs.medusajs.com/advanced/backend/services/create-service)
+- [ReactJs](https://reactjs.org/docs/getting-started.html)
+
+If you also used any other framework, service, or tool, you can include some links to helpful resources related to those tools.
