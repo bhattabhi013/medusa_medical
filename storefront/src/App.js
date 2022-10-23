@@ -8,6 +8,7 @@ import Checkout from './components/Checkout';
 import Singleproduct from './components/Singleproduct';
 import About from './components/About';
 import Contact from './components/Contact';
+import CommingSoon from './components/CommingSoon';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 <Route exact path="/details" element={<Singleproduct/>}/>
 <Route exact path="/about" element={<About/>}/>
 <Route exact path="/Contact" element={<Contact/>}/>
+<Route exact path="/CommingSoon" element={<CommingSoon/>}/>
 
       </Routes>
      

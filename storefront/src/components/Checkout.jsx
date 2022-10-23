@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+
 import { NavLink, useLocation } from 'react-router-dom';
  import './checkout.css';
 
@@ -172,6 +173,7 @@ const alert=()=>{
                 <tbody>
                    
                             <tr>
+
                                 <td>{product.title}</td>
                                 <td>{product.variants[0].prices[1].amount}</td>
                                 {/* <td>2</td>  */}
@@ -181,6 +183,7 @@ const alert=()=>{
                     
                     <tr>
                         <td colSpan="2" className="text-end fw-bold">Grand Total</td>
+
                         <td colSpan="2" className="text-end fw-bold">{product.variants[0].prices[1].amount}</td>
                     </tr>
                 </tbody>
@@ -192,9 +195,9 @@ const alert=()=>{
 
         </div>
 <button onClick={alert} className="btn">
-place order
+PLACE ORDER
 </button>
-   <NavLink  to="/Home">go to Home</NavLink>
+   <NavLink className="goHome"  to="/Home">GO TO HOME</NavLink>
  
     
     </>

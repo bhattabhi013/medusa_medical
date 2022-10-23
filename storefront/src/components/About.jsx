@@ -6,7 +6,7 @@ export default function About() {
     <React.Fragment>
     <h1 class="about">About Us</h1>
     <div class="max-width">
-  <div class="aboutimg"> <img src="./about.jpg" height="450px" width="420px"></img></div>
+  <div class="aboutimg"> <img src="./about-ill.png" height="500px" width="450px"></img></div>
     <p class="about-content">MediSwiss is the online medical store, we all need. It offers medicines at affordable price and at remote locations.
     Our delivery service is quite trustworthy, efficient and smooth. Nowadays ecommerce websites mostly focus on clothes,stationaries,and daily household chores, but
     we tend to make the medical world easier and accessible by customizing the medicine availability in all remote locations.

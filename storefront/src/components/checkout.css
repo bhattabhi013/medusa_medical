@@ -1,8 +1,56 @@
 .left{
     display: flex;
     float: left;
+    height: 400px;
+    padding-bottom: 500px;
+}
+div .card{
+    height: 455px;
+}
+
+.card-header{
+    background-color: #101f62 !important;
+    color: #F6F9FF !important;
+}
+.right{
+    margin: 20px 20px;
 }
 .btn{
-    background-color: black;
-    color:white;
+    margin-left: 170px;
+    background-color: white !important;
+    color:#101f62 !important;
+    border: 2px solid #101f62 !important;
+    transition: 0.3s ease-in-out !important;
+    font-family: monospace !important;
+
+
+}
+.btn:hover{
+    background-color: #101f62 !important;
+    color:white !important;
+    
+    border: 2px solid #101f62 !important;
+}
+
+.goHome {
+    
+    margin-left: 50px;
+    padding: 8px 5px;
+    border-radius: 5px;
+    background-color: white !important;
+    color:#101f62 !important;
+    border: 2px solid #101f62 !important;
+    transition: 0.3s ease-in-out !important;
+    font-family: monospace;
+    text-decoration: none;
+
+}
+
+.goHome:hover{
+    
+    background-color: #101f62 !important;
+    color:white !important;
+    
+    border: 2px solid #101f62 !important;
+
 }
