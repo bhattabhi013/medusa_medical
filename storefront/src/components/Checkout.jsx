@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from "react";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import { NavLink } from 'react-router-dom';
+import './checkout.css';
+
 
 const Checkout = () => {
   const [users, setUsers] = useState([]);
@@ -22,9 +27,13 @@ useEffect(() => {
 getUsers();
 }, []);
 
+const alert=()=>{
+    window.alert("congratulations , you have placed your order !!");
+}
+
   return (
     <>
-    <div>
+    {/* <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -58,10 +67,19 @@ getUsers();
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> */}
-          </div>
-        </div>
-      </nav>
-    </div>
+          {/* </div> */}
+        {/* </div> */}
+      {/* </nav> */}
+
+
+    {/* </div> */}
+
+    <div className="container">
+
+   
+    <div className="left">
+
+   
         <div className="row">
 
         <div className="col-md-7">
@@ -132,6 +150,11 @@ getUsers();
                 </div>
             </div>
         </div>
+        </div>
+
+        <div className="right">
+
+       
         
         <div className="col-md-5">
             <table className="table table-bordered">
@@ -162,7 +185,20 @@ getUsers();
                     </tr>
                 </tbody>
             </table>
+
+
         </div>
+        </div>
+
+        </div>
+<button onClick={alert} className="btn">
+place order
+</button>
+    <Popup trigger={<NavLink  to="/Home">go to Home</NavLink>} position="right center">
+    <div>congratulations , you have placed your order !!</div>
+   </Popup>
+ 
+    
     </>
   );
   
