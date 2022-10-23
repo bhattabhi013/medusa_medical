@@ -7,7 +7,7 @@ export default function About() {
     <h1 class="about">About Us</h1>
     <div class="max-width">
   <div class="aboutimg"> <img src="./about-ill.png" height="500px" width="450px"></img></div>
-    <p class="about-content">SwagMission is the online swag store, we all need. It offers swags in the form of clothes, cups, badges, and all that you love to call goodies at affordable price and at remote locations.
+    <p class="about-content">SwagNation is the online swag store, we all need. It offers swags in the form of clothes, cups, badges, and all that you love to call goodies at affordable price and at remote locations.
     Our delivery service is quite trustworthy, efficient and smooth. Nowadays ecommerce websites mostly focus on clothes,stationaries,and daily household chores, but
     we tend to make the awesome swags delivery easier and accessible by customizing the swags availability in all remote locations.
    <br/><br/> We have various services available here including swag classifications, company based segregation, smooth processing of payment through cash or card, easy
