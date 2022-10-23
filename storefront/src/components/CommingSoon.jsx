@@ -1,14 +1,15 @@
-import React from "react";
- 
-import ComingSoon from "react-coming-soon";
- 
-export default function App() {
+
+
+import React from 'react'
+
+export default function CommingSoon() {
   return (
-    <ComingSoon
-      image="https://react-coming-soon.maksv.me/default-image.jpeg"
-      bgColor="#fff"
-      textColor="#000"
-      illustration="development"
-    />
-  );
+    <div>
+      <h1>
+            Comming Soon
+        </h1>
+        <img src="https://react-coming-soon.maksv.me/default-image.jpeg" alt="" />
+        
+    </div>
+  )
 }
