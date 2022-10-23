@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import "./Products.css";
 
 
  export default function Products(){
@@ -41,6 +42,11 @@ import { Link, NavLink } from 'react-router-dom';
     <h1>List of Products</h1>
 {users.map((user)=>{
               return(
+
+                <div className="container-fluid">
+                    <div className="row">
+
+
 <div className="col-md-3">
 <div className="card h-100 text-center p-4 "  key={user.id} >
   <img src={user.thumbnail} class="card-img-top" alt={user.title}/>
@@ -56,6 +62,8 @@ import { Link, NavLink } from 'react-router-dom';
   </div>
 </div>
 </div>
+                </div>
+            </div>
               )
           }) 
 }
