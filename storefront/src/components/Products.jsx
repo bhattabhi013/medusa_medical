@@ -47,7 +47,7 @@ import { Link, NavLink } from 'react-router-dom';
   <h3>{user.title}</h3>
   <div className="card-body">
     <h5 className="card-title">{users.title}</h5>
-    <p className="card-text">€{user.variants[0].prices[0].amount}</p>
+    {/* <p className="card-text">€{user.variants[0].prices[0].amount}</p> */}
     <p className="card-text">${user.variants[0].prices[1].amount}</p>
     {/* <NavLink href="/products/${user.id}" class="btn btn-primary">Buy Now</NavLink> */}
             <Link to = '/details'
