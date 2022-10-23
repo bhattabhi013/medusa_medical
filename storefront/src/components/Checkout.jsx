@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import { NavLink } from 'react-router-dom';
-import './checkout.css';
+
+import { NavLink, useLocation } from 'react-router-dom';
+ import './checkout.css';
 
 
 const Checkout = () => {
   const [users, setUsers] = useState([]);
+  const location = useLocation();
   var totalCartPrice = 0;
+  const product = location.state.data;
   const getUsers =  () => {
              
     const response =  fetch('http://localhost:9000/store/products')
@@ -170,16 +173,18 @@ const alert=()=>{
                 <tbody>
                    
                             <tr>
-                                <td>1</td>
-                                <td>$400</td>
+
+                                <td>{product.title}</td>
+                                <td>{product.variants[0].prices[1].amount}</td>
                                 {/* <td>2</td>  */}
-                                <td>$400</td> 
+                                <td>{product.variants[0].prices[1].amount}</td> 
                             </tr>
                         
                     
                     <tr>
                         <td colSpan="2" className="text-end fw-bold">Grand Total</td>
-                        <td colSpan="2" className="text-end fw-bold">$400</td>
+
+                        <td colSpan="2" className="text-end fw-bold">{product.variants[0].prices[1].amount}</td>
                     </tr>
                 </tbody>
             </table>
