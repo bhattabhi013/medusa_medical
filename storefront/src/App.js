@@ -2,6 +2,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
@@ -9,7 +10,13 @@ function App() {
    
     
       <Navbar/>
-      <Home/>
+      <Switch>
+<Route exact path="/" element={<Home/>} />
+<Route exact path="/products" element={<Products/>} />
+
+
+      </Switch>
+     
     
     </>
   );

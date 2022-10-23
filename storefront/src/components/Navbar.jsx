@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {NavLink} from 'react-router';
 
 export default function Navbar() {
   return (
@@ -18,7 +19,7 @@ export default function Navbar() {
           <a className="nav-link" href="#">Products</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
+          <NavLink className="nav-link" to="/about">About</NavLink>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Contact</a>
